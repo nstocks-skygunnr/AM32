@@ -528,6 +528,18 @@
 #define BLUE_PIN    GPIO_PIN_5
 #endif
 
+#ifdef SKYG_L431_CAN
+#define FIRMWARE_NAME "SkyGL431"
+#define FILE_NAME "SKYG_L431_CAN"
+#define DRONECAN_SUPPORT 1
+#define DRONECAN_NODE_NAME "com.skyg.esc_dev"
+#define DEAD_TIME 45
+#define HARDWARE_GROUP_L4_B
+#define TARGET_VOLTAGE_DIVIDER 94
+#define MILLIVOLT_PER_AMP 30
+#define USE_SERIAL_TELEMETRY
+#endif
+
 /*********************************************************************AT32F421
  * targets*********************************************/
 
@@ -1011,6 +1023,8 @@
 #define CURRENT_OFFSET 0
 #define USE_SERIAL_TELEMETRY
 #endif
+
+
 
 /****************************************Generic********************************************/
 
